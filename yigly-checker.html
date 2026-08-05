@@ -1,167 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Yigly Checker</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-        }
-        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
-        h2 { color: #34495e; margin-top: 30px; }
-        .highlight { background: #fff3cd; padding: 15px; border-left: 4px solid #ffc107; margin: 20px 0; }
-        .section { margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 8px; }
-        ul { margin: 10px 0; padding-left: 20px; }
-        li { margin: 8px 0; }
-        .contact { background: #e3f2fd; padding: 20px; border-radius: 8px; margin-top: 30px; }
-        .effective-date { color: #666; font-size: 0.9em; }
-        .update { background: #d4edda; padding: 10px; border-radius: 5px; margin: 20px 0; }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RangJong — Privacy Policy</title>
+<style>
+  :root {
+    --ink: #2a2422;
+    --muted: #6b625d;
+    --rule: #e6ded6;
+    --accent: #7b1f2b;
+    --bg: #fdfaf6;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #ece5df; --muted: #a89f99; --rule: #3a3230;
+      --accent: #e0a34b; --bg: #171413; --card: #201b19;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 80px; }
+  header { border-bottom: 3px solid var(--accent); padding-bottom: 18px; margin-bottom: 28px; }
+  h1 { font-size: 1.9rem; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); font-size: 0.95rem; margin: 0; }
+  h2 {
+    font-size: 1.18rem; margin: 36px 0 10px; padding-top: 18px;
+    border-top: 1px solid var(--rule); letter-spacing: -0.01em;
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  h3 { font-size: 1rem; margin: 20px 0 6px; }
+  p, li { color: var(--ink); }
+  a { color: var(--accent); }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 7px; }
+  .card {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 12px;
+    padding: 16px 18px; margin: 18px 0;
+  }
+  .tablewrap { overflow-x: auto; margin: 16px 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 0.93rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 700; background: rgba(123,31,43,0.06); }
+  @media (prefers-color-scheme: dark) { th { background: rgba(224,163,75,0.10); } }
+  footer { margin-top: 46px; padding-top: 18px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.88rem; }
+  code { background: rgba(128,128,128,0.15); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+</style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p class="effective-date"><strong>Last Updated:</strong> February 24, 2026</p>
-    <p class="effective-date"><strong>Effective Date:</strong> February 24, 2026</p>
+<div class="wrap">
 
-    <div class="highlight">
-        <strong> IMPORTANT: Accessibility Service Disclosure</strong><br>
-        This privacy policy specifically addresses our use of the Android Accessibility Service.
-        Please read this section carefully to understand how your data is handled.
-    </div>
+<header>
+  <h1>Privacy Policy — RangJong</h1>
+  <p class="sub">Effective 5 August 2026 · RangJong (Learn Tibetan), by Kunchok Tashi / Kharag Edition</p>
+</header>
 
-    <div class="section">
-        <h2>1. Accessibility Service Usage</h2>
-        <p><strong>Yigly Checker</strong> uses the Android Accessibility Service to provide intelligent writing assistance across all applications on your device.</p>
+<p>This policy explains what RangJong collects, why, who it is shared with, and
+how you can get it deleted. RangJong is a Tibetan language learning app for iOS
+and Android. In this policy, "we" and "the Service Provider" mean Kunchok Tashi,
+operating as Kharag Edition.</p>
 
-        <h3>1.1 What Data We Collect</h3>
-        <ul>
-            <li><strong>Text Content:</strong> When you explicitly use our service, we read text from the active text field you are typing in</li>
-            <li><strong>Screen Context:</strong> We identify the active text field to provide context-aware suggestions</li>
-            <li><strong>User Account:</strong> Your email address (required for service authentication via Firebase)</li>
-        </ul>
+<div class="card">
+  <strong>The short version.</strong> You need an account to use RangJong, so we
+  store your email, your profile and your learning progress. We use Google
+  Firebase for analytics, crash reports and notifications, RevenueCat for
+  subscriptions, and Google AdMob to show ads to users who are not subscribed.
+  <strong>We do not track you across other companies' apps and websites, and we
+  do not sell your personal data.</strong> You can delete your account and all
+  the data attached to it from inside the app at any time.
+</div>
 
-        <h3>1.2 What We DO NOT Collect</h3>
-        <ul>
-            <li> We do NOT collect passwords or credit card information</li>
-            <li> We do NOT access your photos, videos, or files</li>
-            <li> We do NOT read your notifications or messages without your explicit action</li>
-            <li> We do NOT track your location or device information beyond what's necessary for the service</li>
-            <li> We do NOT sell your data to third parties</li>
-            <li> We do NOT use your data for advertising purposes</li>
-        </ul>
+<h2>1. Information we collect</h2>
 
-        <h3>1.3 How Your Data is Processed</h3>
-        <p>Text that you explicitly select for enhancement is:</p>
-        <ol>
-            <li><strong>Encrypted</strong> using industry-standard SSL/TLS encryption</li>
-            <li><strong>Transmitted</strong> to our secure AI servers (Google Gemini API)</li>
-            <li><strong>Processed</strong> to generate grammar corrections, tone adjustments, or translations</li>
-            <li><strong>Returned</strong> as suggestions to you</li>
-            <li><strong>Not stored</strong> on our servers after processing</li>
-        </ol>
-    </div>
+<h3>Information you give us</h3>
+<ul>
+  <li><strong>Account details</strong> — your email address and password when you
+      sign up. If you use Sign in with Apple or Google Sign-In instead, we
+      receive the email address and name that service returns. Passwords are
+      never stored in readable form.</li>
+  <li><strong>Profile information</strong> — display name, chosen avatar, and the
+      optional details you can fill in on the profile screen (such as your
+      heritage and your reason for learning Tibetan).</li>
+  <li><strong>Profile photo</strong> — if you choose to upload one, the app reads
+      the single image you select from your photo library and uploads it to our
+      servers. The app never browses, scans or uploads any other photo.</li>
+  <li><strong>Support messages</strong> — anything you send us through the
+      in-app feedback form.</li>
+</ul>
 
-    <div class="section">
-        <h2>2. Data Retention</h2>
-        <ul>
-            <li><strong>Processed Text:</strong> NOT stored on our servers after processing is complete</li>
-            <li><strong>User Account:</strong> Stored securely in Firebase Authentication</li>
-            <li><strong>Documents:</strong> If you choose to save documents, they are stored in your personal user account in Firebase Firestore</li>
-            <li><strong>User Preferences:</strong> Language, theme, and settings are stored locally on your device</li>
-        </ul>
-    </div>
+<h3>Information created as you use the app</h3>
+<ul>
+  <li><strong>Learning progress</strong> — lessons and courses completed, scores,
+      XP, streaks, hearts, gems, and results from the arcade, tracing and bonus
+      games.</li>
+  <li><strong>Social and leaderboard data</strong> — your league placement,
+      friends, and friend requests. You control this from Settings with the
+      "public profile", "show on leaderboard" and "allow friend requests"
+      toggles. When a toggle is off, that information is not shown to other
+      users.</li>
+  <li><strong>Purchases</strong> — which subscription or gem pack you bought and
+      whether it is still active. Payment is taken by Apple or Google.
+      <strong>We never receive your card number or billing address.</strong></li>
+  <li><strong>Usage and diagnostics</strong> — screens visited, features used,
+      time spent, approximate session length, app version, device model,
+      operating system version, language, IP address, and crash reports
+      including stack traces.</li>
+  <li><strong>Device identifiers</strong> — a Firebase installation ID, a push
+      notification token, and an advertising identifier used by AdMob to deliver
+      and cap ads.</li>
+</ul>
 
-    <div class="section">
-        <h2>3. Data Security</h2>
-        <p>We implement multiple layers of security to protect your information:</p>
-        <ul>
-            <li> <strong>Encryption:</strong> All data is encrypted in transit using SSL/TLS</li>
-            <li> <strong>Secure Storage:</strong> User credentials are encrypted using AndroidX Security Crypto</li>
-            <li> <strong>Authentication:</strong> Firebase Authentication with secure token management</li>
-            <li> <strong>API Security:</strong> Secure API endpoints with token-based authentication</li>
-        </ul>
-    </div>
+<h2>2. Why we use it</h2>
+<div class="tablewrap">
+<table>
+  <thead><tr><th>Purpose</th><th>Data used</th></tr></thead>
+  <tbody>
+    <tr><td>Create and secure your account, sign you in</td><td>Account details, device identifiers</td></tr>
+    <tr><td>Save and sync your progress across devices</td><td>Learning progress, account details</td></tr>
+    <tr><td>Show leagues, leaderboards and friends</td><td>Profile information, learning progress, social settings</td></tr>
+    <tr><td>Unlock paid features and restore purchases</td><td>Purchases, account identifier</td></tr>
+    <tr><td>Send lesson reminders and announcements</td><td>Push notification token</td></tr>
+    <tr><td>Fix crashes and improve the app</td><td>Usage and diagnostics</td></tr>
+    <tr><td>Show and limit the frequency of ads</td><td>Advertising identifier, approximate location from IP</td></tr>
+  </tbody>
+</table>
+</div>
 
-    <div class="section">
-        <h2>4. Third-Party Services</h2>
-        <p>We use the following third-party services:</p>
-        <ul>
-            <li><strong>Firebase (Google):</strong> Authentication, Firestore database, Analytics, Cloud Messaging</li>
-            <li><strong>Google Gemini API:</strong> AI-powered text processing for grammar and translation</li>
-        </ul>
-        <p>These services have their own privacy policies and data handling practices. We ensure they comply with applicable data protection laws.</p>
-    </div>
+<h2>3. Third-party services</h2>
+<p>RangJong shares data with the services below so they can perform these
+functions on our behalf. Each has its own privacy policy.</p>
+<ul>
+  <li><a href="https://firebase.google.com/support/privacy" rel="noopener">Google Firebase</a>
+      — Authentication, Analytics, Crashlytics and Cloud Messaging.</li>
+  <li><a href="https://policies.google.com/privacy" rel="noopener">Google AdMob</a>
+      and Google Play Services — advertising and platform services.</li>
+  <li><a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a>
+      — subscription and purchase management. Receives an app-specific user
+      identifier and your purchase history.</li>
+  <li><a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a> and
+      <a href="https://policies.google.com/privacy" rel="noopener">Google</a>
+      — payment processing and, if you use them, Sign in with Apple / Google
+      Sign-In.</li>
+</ul>
+<p>We do not sell your personal data, and we do not share it with data brokers.</p>
 
-    <div class="section">
-        <h2>5. Your Rights and Choices</h2>
-        <p>You have the right to:</p>
-        <ul>
-            <li> <strong>Disable Accessibility Service:</strong> You can disable our accessibility service at any time in your device settings</li>
-            <li> <strong>Delete Your Account:</strong> You can request deletion of your account and all associated data</li>
-            <li> <strong>Export Your Data:</strong> You can request a copy of your data</li>
-            <li> <strong>Opt-Out of Analytics:</strong> You can disable analytics in app settings</li>
-        </ul>
-    </div>
+<h2>4. Advertising and tracking</h2>
+<p>RangJong shows ads to users who do not have an active subscription.
+<strong>RangJong does not ask for permission to track you, and does not track you
+across apps and websites owned by other companies.</strong> On iOS the App
+Tracking Transparency prompt is therefore not shown and the IDFA is not used for
+cross-app tracking.</p>
+<p>Where the GDPR applies, Google's User Messaging Platform asks for your consent
+before personalised ads are requested, and you can change that choice at any time
+from the ad privacy option in the app. A subscription removes ads entirely.</p>
 
-    <div class="section">
-        <h2>6. Children's Privacy</h2>
-        <p>Yigly Checker is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
-    </div>
+<h2>5. Children</h2>
+<p>RangJong is not directed at children under 13, and we do not knowingly collect
+personal information from them. If you believe a child under 13 has created an
+account, contact us at the address below and we will delete the account and its
+data. Because the app contains third-party advertising, we ask that a parent or
+guardian review this policy before a minor uses RangJong.</p>
 
-    <div class="section">
-        <h2>7. Changes to This Privacy Policy</h2>
-        <p>We may update this privacy policy from time to time. We will notify you of any changes by:</p>
-        <ul>
-            <li>Posting the new privacy policy on this page</li>
-            <li>Updating the "Last Updated" date at the top of this policy</li>
-            <li>Sending you an in-app notification for significant changes</li>
-        </ul>
-    </div>
+<h2>6. Where your data is stored, and for how long</h2>
+<p>Data is processed on servers operated by our hosting and cloud providers,
+including Google Cloud/Firebase and our application backend at
+<code>api.rangjong.kharagedition.com</code>. Depending on the provider and
+region, this may involve transfer to and storage in countries outside your own,
+including the United States.</p>
+<p>We keep your account data for as long as your account exists. When you delete
+your account, the account and the personal data attached to it are removed from
+our systems. Backups and provider logs may retain copies for a short period
+before being overwritten. Aggregated statistics that can no longer identify you
+may be kept.</p>
 
-    <div class="section">
-        <h2>8. Your Consent</h2>
-        <p>By using Yigly Checker, you acknowledge that you have read, understood, and agree to this privacy policy, including our use of the Accessibility Service and AI-powered text processing.</p>
-    </div>
+<h2>7. Your choices and rights</h2>
+<ul>
+  <li><strong>Delete your account, in the app.</strong> Go to
+      <em>Profile → Settings → Delete account</em>. This removes your account and
+      the personal data attached to it. It cannot be undone.</li>
+  <li><strong>Edit your information</strong> at any time from the profile screen.</li>
+  <li><strong>Control your visibility</strong> with the public profile,
+      leaderboard and friend request toggles in Settings.</li>
+  <li><strong>Turn off notifications</strong> in Settings, or in your device's
+      system settings.</li>
+  <li><strong>Manage or cancel a subscription</strong> through your Apple or
+      Google account. Subscriptions are billed by the store, not by us.</li>
+  <li><strong>Access, correction, portability, objection and withdrawal of
+      consent</strong> — email us and we will respond.</li>
+</ul>
+<p>Depending on where you live, you may have additional rights under the GDPR,
+the UK GDPR, or state privacy laws such as the CCPA. We honour these requests
+regardless of where you live.</p>
 
-    <div class="contact">
-        <h2>9. Contact Us</h2>
-        <p>If you have any questions, concerns, or requests regarding this privacy policy or our data practices, please contact us:</p>
-        <ul>
-            <li><strong>Email:</strong> <a href="mailto:support@kharagedition.com">support@kharagedition.com</a></li>
-            <li><strong>Website:</strong> <a href="https://kharagedition.com">https://kharagedition.com</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/kharagedition">https://github.com/kharagedition</a></li>
-        </ul>
+<h2>8. Security</h2>
+<p>Traffic between the app and our servers is encrypted in transit. Sign-in
+tokens are held in the device's secure storage (Keychain on iOS, Keystore-backed
+storage on Android). No system is perfectly secure, so we cannot guarantee
+absolute security.</p>
 
-        <h3>Data Deletion Request</h3>
-        <p>To request deletion of your account and data, please email us at <strong>support@kharagedition.com</strong> with the subject line "Data Deletion Request" and include your registered email address.</p>
-    </div>
+<h2>9. Changes to this policy</h2>
+<p>We may update this policy as the app changes. The effective date at the top
+will change, and material changes will be announced in the app. Continuing to
+use RangJong after an update means you accept the revised policy.</p>
 
-    <div class="section">
-        <h2>10. Legal Basis for Processing (GDPR)</h2>
-        <p>For users in the European Union, we process your data based on:</p>
-        <ul>
-            <li><strong>Contractual Necessity:</strong> To provide the writing assistance services you've requested</li>
-            <li><strong>Consent:</strong> Your explicit consent when enabling the accessibility service</li>
-            <li><strong>Legitimate Interest:</strong> To improve our services and prevent abuse</li>
-        </ul>
-    </div>
+<h2>10. Contact</h2>
+<p>Questions, or a request about your data:
+<a href="mailto:developer.kharag@gmail.com">developer.kharag@gmail.com</a>.
+We aim to reply within 30 days.</p>
 
-    <div class="update">
-        <strong> Recent Updates:</strong><br>
-        • Added detailed Accessibility Service disclosure (February 2026)<br>
-        • Clarified AI processing and data retention policies (February 2026)<br>
-        • Added user rights and contact information (February 2026)
-    </div>
+<footer>
+  RangJong is published by Kunchok Tashi (Kharag Edition).<br>
+  Subscription terms are governed by Apple's
+  <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Standard End User License Agreement</a>.
+</footer>
 
-    <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center; color: #666;">
-        <p>© 2026 Kharag Edition. All rights reserved.</p>
-        <p>This privacy policy is legally binding and governs your use of Yigly Checker.</p>
-    </footer>
+</div>
 </body>
 </html>
