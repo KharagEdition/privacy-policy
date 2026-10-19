@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — SaySo AI Chrome Extension</title>
+  <meta name="description" content="Privacy Policy for the SaySo AI Speech-to-Text and Voice Typing Chrome Extension." />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --accent: #2563eb;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 3rem 2.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #eff6ff;
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.5rem;
+    }
+
+    .last-updated {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-main);
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    li strong {
+      color: var(--text-main);
+    }
+
+    .highlight-box {
+      background-color: #f1f5f9;
+      border-left: 4px solid var(--accent);
+      padding: 1.25rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0.5rem;
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .highlight-box ul {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 1.75rem 1.25rem;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <span class="badge">SaySo AI</span>
+    <h1>Privacy Policy</h1>
+    <p class="last-updated"><strong>Effective Date &amp; Last Updated:</strong> October 18, 2026</p>
+
+    <p>
+      SaySo AI ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how the <strong>SaySo AI Chrome Extension</strong> collects, processes, and safeguards information when you use our voice-to-text and speech dictation services.
+    </p>
+
+    <h2>1. Information We Collect and Process</h2>
+    <p>SaySo AI is built on a strict data-minimization principle. We only process data that is directly required when you actively trigger the extension:</p>
+    <ul>
+      <li>
+        <strong>Microphone Audio Data:</strong> SaySo AI only accesses your microphone when you explicitly initiate a recording session (via keyboard shortcut or UI click). Audio streams are transmitted securely over encrypted connections (HTTPS/WSS) to our speech-to-text transcription infrastructure (powered by ElevenLabs) solely to convert your spoken words into text in real time. We do not permanently store, archive, or sell your voice recordings.
+      </li>
+      <li>
+        <strong>Active Text Field Interaction:</strong> To insert your transcribed speech, the extension interacts solely with the currently focused editable element (such as an <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, or <code>contenteditable</code> field) on the active webpage. We do not scrape, monitor, or harvest background website content, passwords, or browsing history.
+      </li>
+      <li>
+        <strong>Local User Preferences:</strong> Your extension settings—such as preferred dictation language, selected microphone device, and custom keyboard shortcuts—are stored locally on your device using Chrome's native <code>chrome.storage</code> API.
+      </li>
+    </ul>
+
+    <h2>2. How We Use Information</h2>
+    <p>Any information processed by SaySo AI is used strictly for the single purpose of the extension:</p>
+    <ul>
+      <li>Transcribing spoken audio into written text with automatic punctuation and grammar formatting.</li>
+      <li>Inserting the resulting text into the user's selected input field on the active webpage.</li>
+      <li>Remembering user configuration settings across browser sessions.</li>
+    </ul>
+
+    <h2>3. Chrome Permissions Disclosure</h2>
+    <p>SaySo AI requests only the minimum browser permissions necessary to operate:</p>
+    <ul>
+      <li><strong>Storage (<code>chrome.storage</code>):</strong> Used to save your language, shortcut, and device preferences locally.</li>
+      <li><strong>Offscreen (<code>chrome.offscreen</code>):</strong> Required by Chrome Manifest V3 to manage microphone audio streams and Web Audio API connections reliably while you dictate.</li>
+      <li><strong>Scripting &amp; Host Permissions:</strong> Required to detect the focused text input field on the webpage you are currently viewing and insert your transcribed text at your cursor position.</li>
+    </ul>
+
+    <h2>4. Data Sharing &amp; Third-Party Processing</h2>
+    <p>
+      We do not sell, rent, or trade your personal data to third parties or data brokers. Audio streams are transmitted exclusively to our enterprise AI speech-to-text provider (ElevenLabs) to perform real-time transcription and are handled under strict confidentiality and encryption standards.
+    </p>
+
+    <div class="highlight-box">
+      <p>5. Google Chrome Web Store Limited Use Disclosure</p>
+      <ul>
+        <li>The use of information received from Google APIs adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements.</li>
+        <li>We do not transfer or sell user data to third parties such as advertising platforms, data brokers, or information resellers.</li>
+        <li>We do not use or transfer user data for serving personalized, retargeted, or interest-based advertisements.</li>
+        <li>We do not use or transfer user data to determine creditworthiness or for lending purposes.</li>
+      </ul>
+    </div>
+
+    <h2>6. Data Security &amp; Retention</h2>
+    <p>
+      All data transmissions between the SaySo AI Chrome Extension and our transcription endpoints are encrypted in transit using industry-standard TLS (HTTPS/WSS). Because transcriptions are returned in real time directly into your browser DOM, we do not maintain a database of your dictated messages or emails. You can clear all locally stored extension settings at any time by uninstalling the extension.
+    </p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time to reflect improvements to our extension or changes in regulatory requirements. Any updates will be posted on this page with an updated revision date.
+    </p>
+
+    <h2>8. Contact Us</h2>
+    <p>
+      If you have any questions, feedback, or privacy inquiries regarding the SaySo AI Chrome Extension, please contact us at:
+      <br />
+      <strong>Email:</strong> <a href="mailto:support@sayso.ai">support@sayso.ai</a>
+    </p>
+
+    <footer>
+      &copy; 2026 SaySo AI. All rights reserved.
+    </footer>
+  </main>
+
+</body>
+</html>
